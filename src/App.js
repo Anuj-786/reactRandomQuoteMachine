@@ -22,7 +22,7 @@ class App extends Component {
   // method for fetch api to fecth quote from the other server
   _fetchQuote = () => {
     // fetch api reqeust
-    fetch("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=20")
+    fetch("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=20")
     // fetch api returning a promise  object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
     .then((response) => response.json())
     // fetch api response data in json
